@@ -1,0 +1,19 @@
+lang page
+-categorias
+-destaques
+-novidades
+-seção de marcas
+-contato
+
+pagina produtos
+-seleção de exibição
+-lista de produto
+
+pagina do produto
+-display do produto com descrição
+-produtos relacionados
+
+pagina do carrinho
+-
+
+pagina conta

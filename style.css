@@ -1,0 +1,273 @@
+/* collors
+Dark-blue #140A2B
+Dark-purple #250D2F
+Dark-pink #BD0347
+Light-blue #0EDBFC
+light-pink #F2D4C9
+*/
+
+@font-face {
+  font-family: "w95fa";
+  src: url("font/w95fa.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url("font/PressStart2P.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #140a2b;
+  color: #0edbfc;
+  font-family: "w95fa";
+}
+
+.row {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.col-3 {
+  float: left;
+  margin-left: 50px;
+  width: 32%;
+}
+
+.col-4 {
+  float: left;
+  margin-left: 40px;
+  width: 24%;
+  padding: 10px;
+  max-width: 200px;
+  margin-bottom: 50px;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  font-family: "PressStart2P";
+  text-shadow: #90e9f6 0px 0px 25px;
+  letter-spacing: 2px;
+}
+
+/* Header=======================================================================================================*/
+
+#logo-id {
+  height: 13%;
+  width: 13%;
+}
+
+.main-menu {
+  max-height: 50px;
+}
+
+.logo {
+  text-align: left;
+}
+
+.search-bar {
+  position: absolute;
+  right: 42%;
+  top: 8%;
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+input[type="text"] {
+  background: #f2d4c9;
+  width: 350px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 13px 0 0 13px;
+  color: #bd0347;
+}
+
+input[type="submit"] {
+  border-radius: 0 13px 13px 0;
+  left: -4px;
+  border: none;
+  outline: none;
+  background: #f2d4c9;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  color: #bd0347;
+}
+
+input[type="submit"]:hover {
+  background: #db9a95;
+}
+
+.main-nav {
+  position: absolute;
+  top: 8%;
+  left: 60%;
+}
+
+.main-nav li {
+  letter-spacing: 2px;
+  font-size: 130%;
+  display: inline-block;
+  margin-left: 37px;
+  text-shadow: #0edbfc 0px 0px 8px;
+  transition: ease-in-out 0.4s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #0edbfc;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav li :hover {
+  text-shadow: #90e9f6 0px 0px 18px;
+}
+
+.sec-nav {
+  text-align: center;
+}
+
+.sec-nav li {
+  display: inline-block;
+  margin-left: 85px;
+  margin-top: 20px;
+  font-size: 170%;
+  text-shadow: #0edbfc 0px 0px 4px;
+  transition: 0.4s;
+}
+
+.sec-nav li:hover {
+  cursor: pointer;
+  text-shadow: #90e9f6 0px 0px 25px;
+}
+
+/* Banner ================================================================================================*/
+
+.img-banner {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  top: 250px;
+  background-image: url(resouces/Images/heroImage.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 350px;
+}
+
+/* Featured ================================================================================================*/
+
+.product-card {
+  margin-top: 50px;
+  min-width: 238px;
+  min-height: 400px;
+  max-width: 238px;
+  max-height: 400px;
+  background: #250d2f;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #bd0347 0px 0px 20px;
+  text-shadow: #90e9f6 0px 0px 5px;
+  transition: 800ms;
+}
+
+.product-card:hover {
+  background: #bd0347;
+  box-shadow: #bd0347 0px 0px 50px;
+  text-shadow: #90e9f6 0px 0px 25px;
+}
+
+.product-card a,
+.product-card h3,
+.product-card h4,
+.product-card span {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.heart-logo {
+  top: 50%;
+  width: 30px;
+}
+
+.product-img {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin: 0 20px;
+  text-align: center;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img img {
+  max-width: 210px;
+  max-height: 210px;
+}
+.btn-cart a {
+  background-color: #bd0347;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: #bd0347 0px 0px 20px;
+}
+
+.btn1 a {
+  margin: 20px 20px;
+  padding: 15px;
+}
+
+.btn2 a {
+  position: relative;
+  top: 10px;
+  margin-right: 0;
+  padding: 7px;
+}
+
+.btn-cart li {
+  display: inline-block;
+}
+
+.btn-cart li a {
+  text-decoration: none;
+  font-size: 90%;
+  color: #0edbfc;
+}
+
+/* News & Promotions*/
+
+.section-news {
+}
+
+.promotions h2,
+.section-news h2 {
+  top: 40px;
+}
